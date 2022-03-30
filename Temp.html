@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temperature</title>
+    <style>
+        h1{
+        color:rgb(70, 70, 70);
+        margin-top:20%;
+        text-align:center;
+        }
+        h2{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Today's Temperature</h2>
+    <script>
+//stores the value of kelvin
+const kelvin=prompt('Enter a degree in kelvin');
+//converts kelvin to celsuis
+let celsius= kelvin - 273;
+//converts celsuis to fahrenheit
+let fahrenheit = celsius * (9 / 5) + 32;
+//rounds down the value of fahrenheit 
+fahrenheit = Math.floor(fahrenheit);
+document.write(`<h1> The temperature is ${fahrenheit} degrees Fahrenheit. </h1>`);
+    </script>
+
+</body>
+</html>
